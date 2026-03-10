@@ -238,7 +238,7 @@ export function HomeClient() {
 
         {showCreate && (
           <div className="form-card">
-            <div className="section-title">创建 ETF</div>
+            <div className="section-title">创建ETF/个股</div>
             <div className="form-grid">
               <div className="form-field">
                 <label className="form-label">名称</label>
@@ -431,7 +431,7 @@ export function HomeClient() {
                 onClick={onCreateEtf}
                 disabled={!isDraftValid}
               >
-                保存 ETF
+                保存
               </button>
             </div>
           </div>

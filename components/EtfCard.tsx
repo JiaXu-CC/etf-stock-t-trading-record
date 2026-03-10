@@ -18,7 +18,6 @@ export function EtfCard({ snapshot }: Props) {
           <div className="etf-name">{etf.name}</div>
           <div className="etf-code">{etf.code}</div>
         </div>
-        <div className="tag">ETF</div>
       </div>
 
       <div className="card-grid">

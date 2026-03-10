@@ -80,7 +80,7 @@ export function EtfDetailClient({ etfId }: Props) {
             </div>
           </div>
           <div className="chip-row">
-            <span className="chip chip-strong">ETF 明细页</span>
+            <span className="chip chip-strong">ETF/个股明细页</span>
             <span className="chip">数据来自 localStorage</span>
           </div>
         </div>
@@ -120,7 +120,7 @@ export function EtfDetailClient({ etfId }: Props) {
               <div className="section-title">交易记录</div>
             </div>
             {calculated.seq.length === 0 ? (
-              <div className="empty-hint">当前 ETF 暂无交易记录。你可以先新增一笔交易。</div>
+              <div className="empty-hint">当前 ETF/个股 暂无交易记录。你可以先新增一笔交易。</div>
             ) : (
               <div className="detail-section-stack">
                 {calculated.seq.map((t) => (

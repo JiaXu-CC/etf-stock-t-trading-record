@@ -6,7 +6,7 @@ export default function HomePage() {
       <main className="app-container">
         <header className="app-header">
           <div className="app-title-group">
-            <div className="app-title">ETF T 交易记录</div>
+            <div className="app-title">ETF/个股 做T交易记录</div>
             <div className="app-subtitle">个人本地小工具 · 数据存于浏览器</div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>

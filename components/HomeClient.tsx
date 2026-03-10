@@ -177,14 +177,14 @@ export function HomeClient() {
     <>
       <div className="section-scroll">
         <div className="section-title-row">
-          <div className="section-title">ETF 列表</div>
+          <div className="section-title">ETF/个股列表</div>
           <div style={{ display: "flex", gap: 8 }}>
             <button
               type="button"
               className="btn-ghost btn-ghost-pill"
               onClick={() => setShowCreate((v) => !v)}
             >
-              {showCreate ? "收起新建" : "新建 ETF"}
+              {showCreate ? "收起新建" : "新建ETF/个股"}
             </button>
             <button
               type="button"

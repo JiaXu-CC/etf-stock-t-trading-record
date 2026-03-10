@@ -5,6 +5,7 @@ import { EtfCard } from "@/components/EtfCard";
 import { ETF, EtfSnapshot, Trade } from "@/lib/types";
 import { createId, getETFs, getTrades, saveETFs, saveTrades } from "@/lib/storage";
 import { calculateEtfSummary } from "@/lib/etf-summary";
+import { seedDemoDataIfEmpty } from "@/lib/demo-seed";
 
 type NewEtfDraft = Omit<ETF, "id">;
 
@@ -57,6 +58,7 @@ export function HomeClient() {
   const isDraftValid = Object.keys(validateDraft(draft)).length === 0;
 
   useEffect(() => {
+    seedDemoDataIfEmpty();
     setEtfs(getETFs());
     setTrades(getTrades());
   }, []);
